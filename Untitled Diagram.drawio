@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2021-01-01T17:21:44.545Z" agent="5.0 (Macintosh; Intel Mac OS X 11_1_0) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/87.0.4280.88 Safari/537.36" etag="XjEXUMNmx4MPbQxP_rm9" version="13.10.9" type="github">
+<mxfile host="app.diagrams.net" modified="2021-01-01T17:53:56.897Z" agent="5.0 (Macintosh; Intel Mac OS X 11_1_0) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/87.0.4280.88 Safari/537.36" etag="968ilRdKzRNpr-YjB_C9" version="13.10.9" type="github">
   <diagram name="Page-1" id="58cdce13-f638-feb5-8d6f-7d28b1aa9fa0">
     <mxGraphModel dx="884" dy="621" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1100" pageHeight="850" background="#ffffff" math="0" shadow="0">
       <root>
@@ -86,10 +86,10 @@
         <mxCell id="LWWSfnZDgmoD0diwHtsT-34" value="纯保证额度是否足够" style="rhombus;whiteSpace=wrap;html=1;fillColor=#ffffc0;strokeColor=#ff0000;" vertex="1" parent="1">
           <mxGeometry x="270" y="380" width="80" height="40" as="geometry" />
         </mxCell>
-        <mxCell id="LWWSfnZDgmoD0diwHtsT-46" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0.5;entryY=1;entryDx=0;entryDy=0;" edge="1" parent="1" source="LWWSfnZDgmoD0diwHtsT-45" target="LWWSfnZDgmoD0diwHtsT-53">
+        <mxCell id="LWWSfnZDgmoD0diwHtsT-46" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0.5;entryY=1;entryDx=0;entryDy=0;" edge="1" parent="1" source="LWWSfnZDgmoD0diwHtsT-70" target="LWWSfnZDgmoD0diwHtsT-53">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="LWWSfnZDgmoD0diwHtsT-52" value="交易成功，但保证额度用完" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="LWWSfnZDgmoD0diwHtsT-46">
+        <mxCell id="LWWSfnZDgmoD0diwHtsT-52" value="是激活，交易成功，但保证额度用完" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="LWWSfnZDgmoD0diwHtsT-46">
           <mxGeometry x="-0.7109" y="1" relative="1" as="geometry">
             <mxPoint as="offset" />
           </mxGeometry>
@@ -101,6 +101,9 @@
           <mxGeometry x="-0.19" y="-1" relative="1" as="geometry">
             <mxPoint y="47" as="offset" />
           </mxGeometry>
+        </mxCell>
+        <mxCell id="LWWSfnZDgmoD0diwHtsT-71" value="足够" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="LWWSfnZDgmoD0diwHtsT-45" target="LWWSfnZDgmoD0diwHtsT-70">
+          <mxGeometry relative="1" as="geometry" />
         </mxCell>
         <mxCell id="LWWSfnZDgmoD0diwHtsT-45" value="保证额度+信用额度是否足够" style="rhombus;whiteSpace=wrap;html=1;fillColor=#ffffc0;strokeColor=#ff0000;" vertex="1" parent="1">
           <mxGeometry x="270" y="480" width="80" height="40" as="geometry" />
@@ -155,6 +158,17 @@
           <mxGeometry x="-0.0559" y="-2" relative="1" as="geometry">
             <mxPoint as="offset" />
           </mxGeometry>
+        </mxCell>
+        <mxCell id="LWWSfnZDgmoD0diwHtsT-72" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.25;entryY=1;entryDx=0;entryDy=0;" edge="1" parent="1" source="LWWSfnZDgmoD0diwHtsT-70" target="LWWSfnZDgmoD0diwHtsT-16">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="LWWSfnZDgmoD0diwHtsT-73" value="非激活，证明中途已经改为过期，这里继续保持过期，交易成功" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="LWWSfnZDgmoD0diwHtsT-72">
+          <mxGeometry x="-0.8323" y="2" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="LWWSfnZDgmoD0diwHtsT-70" value="状态是否激活" style="rhombus;whiteSpace=wrap;html=1;fillColor=#ffffc0;strokeColor=#ff0000;" vertex="1" parent="1">
+          <mxGeometry x="270" y="550" width="80" height="40" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
